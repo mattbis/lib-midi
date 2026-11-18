@@ -5,6 +5,7 @@ All notable changes to the **MTZ Realtime MIDI** (`mtz-realtime-midi`) 2-channel
 ## [0.1.0] - 2026-11-18
 
 ### Added
+- **License**: Added GNU General Public License v3.0 (`GPL-3.0-or-later`) in root `LICENSE`.
 - **Core Plugin Infrastructure (`src.rs/realtime-midi`)**:
   - Initial VST3 (`.vst3`), CLAP (`.clap`), and raw dynamic library (`.dll`) plugin target under vendor **`mtz`** (`com.mtz.realtime-midi`).
   - 2-channel Stereo FX Bus Audio Input -> 2-channel Stereo Audio Output (with switchable unity **Audio Pass-Thru** or muted audio output) and sample-accurate **MIDI Event Output** (`NoteOn`, `NoteOff`, `MidiPitchBend`, `MidiCC`).
