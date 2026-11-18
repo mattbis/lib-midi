@@ -1,0 +1,17 @@
+[package]
+name = "mtz-realtime-midi"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Real-time 2-channel FX bus Audio-to-MIDI VST3 & CLAP converter plugin"
+
+[lib]
+name = "mtz_realtime_midi"
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+nih_plug = { git = "https://github.com/robbert-vdh/nih-plug.git", features = ["assert_process_allocs"] }
+nih_plug_egui = { git = "https://github.com/robbert-vdh/nih-plug.git" }
+crossbeam-channel = "0.5"
+parking_lot = "0.12"

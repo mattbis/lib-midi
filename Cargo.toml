@@ -1,0 +1,22 @@
+[workspace]
+members = [
+    "src.rs/realtime-midi",
+    "src.rs/xtask",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["mtz"]
+
+[profile.release]
+lto = "thin"
+strip = "symbols"
+codegen-units = 1
+
+[profile.profiling]
+inherits = "release"
+debug = true
+strip = "none"
