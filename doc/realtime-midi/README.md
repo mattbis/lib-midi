@@ -1,7 +1,7 @@
 # MTZ Realtime MIDI (`mtz-realtime-midi`)
 
 **Vendor:** `mtz`  
-**Crate Location:** [`src.rs/realtime-midi`](../../src.rs/realtime-midi)  
+**Crate Location:** [`src-rs.dev/realtime-midi`](../../src-rs.dev/realtime-midi)  
 **Plugin Formats:** VST3 (`mtz-realtime-midi.vst3`), CLAP (`mtz-realtime-midi.clap`), Shared Library (`mtz-realtime-midi.dll`)
 
 `mtz-realtime-midi` is a low-latency, real-time 2-channel FX bus **Audio-to-MIDI** converter plugin written in Rust using `nih-plug` and `nih_plug_egui`. Drop it onto any stereo FX bus, instrument stem, vocal/guitar track, or drum bus to extract live MIDI notes, velocities, pitch bend, and continuous expression CCs in "realish time" (~10–21 ms analysis window with ~5.3 ms hop updates at 48 kHz).

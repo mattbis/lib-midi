@@ -1,7 +1,7 @@
 [workspace]
 members = [
-    "src.rs/realtime-midi",
-    "src.rs/xtask",
+    "src-rs.dev/realtime-midi",
+    "src-rs.dev/xtask",
 ]
 resolver = "2"
 
